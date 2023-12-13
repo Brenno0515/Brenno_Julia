@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="total">
+    <h1>Lista de afazeres</h1>
+    <form id="form">
+        <input type="text" id="input" placeholder="Adicionar tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
+    <div id="tasks">
+        <!-- Tarefas serão exibidas aqui -->
+    </div>
+    <div id="filters">
+        <button onclick="filter('all')">Todas</button>
+        <button onclick="filter('completed')">Completas</button>
+        <button onclick="filter('pending')">Pendentes</button>
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
